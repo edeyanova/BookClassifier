@@ -75,63 +75,15 @@ public class Test {
 		return books;
 	}
 	public static void main(String[] args) throws IOException {
-//		long start = System.currentTimeMillis();
+
 		List<Book> trainData = 
-				getBooks("D:\\61588\\Четвърти курс\\Зимен семестър\\Извличане на знания от данни\\Проект\\Dataset\\TrainData");
+				getBooks("D:\\Dataset\\TrainData");
 		List<Book> testData = 
-				getBooks("D:\\61588\\Четвърти курс\\Зимен семестър\\Извличане на знания от данни\\Проект\\Dataset\\TestData");
-//		BookWriter.writeBooksToFile("TrainData.txt", trainData.toArray(new Book[0]));
-//		BookWriter.writeBooksToFile("TestData.txt", testData.toArray(new Book[0]));
-		
-//		List<Book> trainData = BookReader.readBooksFromFile("TrainData.txt");
-//		List<Book> testData = BookReader.readBooksFromFile("TestData.txt");
+				getBooks("D:\\Dataset\\TestData");
+
 		System.out.println("Accuracy: "+MultinomialNaiveBayesClassifier.getAccuracy(testData, trainData)+"%");
 		System.out.println("Accuracy: "+NaiveBayesClassifier.getAccuracy(testData, trainData)+"%");
-		//long end = System.currentTimeMillis();
-		
-		//System.out.println("Time: "+ (end-start)/1000.0+" seconds");
-//				List<Keyword> keywords = KeywordsExtractingFromTextFile
-//				.getKeywordsFromFile("C:\\Users\\home\\Desktop\\LittleRedRidingHood.txt");
-//		 for (Keyword keyword : keywords) {
-//		 System.out.println(keyword.getStem()+" "+keyword.getFrequency());
-//		 }
-		
-//
-//		Map<String, Integer> words = new HashMap<String, Integer>();
-//		for (Keyword keyword : keywords) {
-//			words.put(keyword.getStem(), keyword.getFrequency());
-//		}
-//		
-//		List resultWords = entriesSortedByValues(words);
-//		
-//		//Takes the first 10 keywords sorted by descending order
-//		List kWords = resultWords.subList(0, 10);
-//		System.out.println(kWords);
-//	
-//		//write keywords to a file
-//		
-//		File file = new File("C:\\Users\\home\\Desktop\\Keywords.txt");
-//		FileWriter fw = new FileWriter(file);
-//        BufferedWriter bw = new BufferedWriter(fw);
-//        for (int i = 0; i < kWords.size(); i++) {
-//            bw.write(kWords.get(i).toString());
-//            bw.newLine();
-//        }
-//        bw.flush();
-//        bw.close();
-		
-//		System.out.println(resultWords);
-//		System.out.println(entriesSortedByValues(words));
-		
-//		for (Book book : trainData) {
-//			System.out.println(book.getGenre()+" "+book.getKeywords().size());
-//		}
-		
-//		double i = 3.452;
-//		for (int j = 0; j < 100000; j++) {
-//			i*=0.001;
-//		}
-//		System.out.println(i);
+		System.out.println(i);
 
 	}
 
