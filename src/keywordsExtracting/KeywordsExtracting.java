@@ -115,7 +115,7 @@ public class KeywordsExtracting {
 		    tokenStream = new ASCIIFoldingFilter(tokenStream);
 		    
 		    // remove english stop words
-		    Set<String> stopWords = getStopWords("D:\\61588\\Четвърти курс\\Зимен семестър\\Извличане на знания от данни\\Проект\\BookClassifier\\stopWords.txt");
+		    Set<String> stopWords = getStopWords("D:\\BookClassifier\\stopWords.txt");
 		    HashSet<String> union = new HashSet<String>(stopWords);
 		    union.addAll((Collection<? extends String>) EnglishAnalyzer.getDefaultStopSet());
 		    tokenStream = new StopFilter(Version.LUCENE_36, tokenStream,
