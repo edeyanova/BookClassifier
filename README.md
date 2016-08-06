@@ -81,12 +81,18 @@ Multinomial Naive Bayes е версия на Naive Bayes, която е пред
 
 
 Обяснение на работата на алгоритъма чрез конкретен пример:
-		Doc			Words			Class
-Training	1	Mountain Rock Mountain	                Adventure
-		2	Mountain Mountain Climbing	        Adventure
-		3	Mountain Power	                        Adventure
-		4	Hat Cat Mountain	                Children
-Test		5	Mountain Mountain Mountain Hat Cat	?
+
+		Doc			Words			    Class
+		
+Training	 1	 Mountain Rock Mountain	                 Adventure
+
+		 2 	 Mountain Mountain Climbing	Adventure
+		
+		 3	 Mountain Power	           Adventure
+		
+	 	 4	 Hat Cat Mountain	   Children
+		 
+Test		 5 	 Mountain Mountain Mountain Hat Cat ?
 
 •	P(Mountain | Adventure) = (5 + 1) / (8 + 6) = 6/14 = 3/7
 
