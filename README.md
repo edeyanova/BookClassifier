@@ -26,7 +26,7 @@ Classification of books by genre.
 
 Вторият алгоритъм е Multinomial Naive Bayes 
 
-Multinomial Naive Bayes е версия на Naive Bayes, която е предназначена за предимно за класификация на текстови документи. 
+Multinomial Naive Bayes е версия на Naive Bayes, която е предназначена предимно за класификация на текстови документи. 
 
 	supervised learning method
 
